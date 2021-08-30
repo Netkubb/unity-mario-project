@@ -50,10 +50,6 @@ public class player_move : MonoBehaviour
         Vector2 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
-
-
-
-        //wowza
         //wowza2
     }
 }
