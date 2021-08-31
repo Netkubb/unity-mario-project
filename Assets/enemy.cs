@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enemy : MonoBehaviour
 {
@@ -42,5 +43,13 @@ public class enemy : MonoBehaviour
     {
         isFacingRight = !isFacingRight;
         transform.localScale = transform.localScale * new Vector2(-1, 1);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }
