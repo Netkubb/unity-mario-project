@@ -970,7 +970,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13658524, y: -0.3290472}
+  m_Offset: {x: 0.03795433, y: -0.10925639}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -981,7 +981,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0314827, y: 3.0935683}
+  m_Size: {x: 1.6824036, y: 3.53315}
   m_EdgeRadius: 0
 --- !u!212 &1468249181
 SpriteRenderer:
@@ -1023,7 +1023,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 684e071a8e8b6449ba7f458a300d6da7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e5f259dc549d9784abbeadc1434509dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1043,7 +1043,7 @@ Transform:
   m_GameObject: {fileID: 1468249178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.973196, y: -2.08, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1075,7 +1075,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13658524, y: -0.3290472}
+  m_Offset: {x: 0.03795433, y: -0.10925639}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1086,7 +1086,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0314827, y: 3.0935683}
+  m_Size: {x: 1.6824036, y: 3.53315}
   m_EdgeRadius: 0
 --- !u!1 &1685470338
 GameObject:
@@ -1421,8 +1421,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142602798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.08, y: 2.72, z: 0}
-  m_LocalScale: {x: 0.617, y: 0.617, z: 0.617}
+  m_LocalPosition: {x: -2.56, y: -2.51, z: 0}
+  m_LocalScale: {x: 0.7061, y: 0.7061, z: 0.7061}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
