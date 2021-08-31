@@ -31,11 +31,11 @@ public class enemy : MonoBehaviour
         }
         if (isFacingRight)
         {
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(1, 0) * enemySpeed;
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(enemySpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
         }
         else
         {
-            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-1, 0) * enemySpeed;
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-enemySpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
         }
     }
 
