@@ -9,11 +9,14 @@ public class enemy : MonoBehaviour
     public GameObject player;
     public float enemySpeed;
     private bool isFacingRight;
+    public int maxHealth = 100;
+    int currentHealth;
 
     // Start is called before the first frame update
     void Start()
     {
         isFacingRight = false;
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -50,6 +53,24 @@ public class enemy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             SceneManager.LoadScene("SampleScene");
+        }
+        if (other.gameObject.tag == "DeathZone")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void getHitted(int damage)
+    {
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject.GetComponent<Rigidbody2D>());
+            gameObject.GetComponents<Collider2D>()[0].enabled = false;
+            gameObject.GetComponents<Collider2D>()[1].enabled = false;
+
+            this.enabled = false;
         }
     }
 }
